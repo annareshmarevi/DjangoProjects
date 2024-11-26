@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="banner">
+                <div class="banner-text">
+                    <h1>TODO</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+                <div class="shadow card">
+                    <div class="card-body">
+                        <h5 class="class-title">{{taskdetail.taskname}}</h5>
+                        <p><b>{{taskdetail.priority}}</b></p>
+                        <p><b>{{taskdetail.date}}</b></p>
+                        <a class="btn btn-success" href="{% url 'delete' taskdetail.id %}">Done</a>
+                        <a class="btn btn-primary" href="{% url 'update' taskdetail.id %}">Update</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

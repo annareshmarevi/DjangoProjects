@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<table width="100%" height="100%">
+    <tr>
+        <td align="center" valign="middle">
+            <form method="POST">
+                {% csrf_token %}
+                <h5>Are you sure that you completed this task</h5><br>
+                <button type="submit">Confirm</button>
+
+            </form>
+        </td>
+    </tr>
+</table>
+{% endblock %}
