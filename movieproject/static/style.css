@@ -1,0 +1,29 @@
+body{
+background-color:pink;
+}
+
+.card1 {
+    margin: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Centers the content horizontally */
+  align-items: center; /* Aligns items vertically if needed */
+  height: 60px; /* Adjust as needed */
+  background-color: #333; /* Optional */
+  padding: 0 20px;
+}
+
+.nav-center  {
+  color: white; /* Optional */
+  margin: 0 15px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  font-size: 35px;
+}
+
+
+
+.navbar-add {
+    margin-left: auto;
+
